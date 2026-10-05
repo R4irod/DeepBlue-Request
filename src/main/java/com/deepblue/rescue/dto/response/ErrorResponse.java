@@ -1,13 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.deepblue.rescue.dto.response;
 
-/**
- *
- * @author Fer
- */
-public class ErrorResponse {
-    
+import java.time.LocalDateTime;
+import java.util.Map;
+
+public record ErrorResponse(
+        LocalDateTime timestamp,
+        int status,
+        String error,
+        String message,
+        Map<String, String> details
+) {
 }
