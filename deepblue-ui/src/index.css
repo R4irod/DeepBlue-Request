@@ -1,0 +1,47 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f4f7fa;
+  color: #1b2a3a;
+}
+
+main.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 { margin: 0; padding: 16px 24px; background: #0b3d66; color: white; font-size: 1.3rem; }
+h2, h3 { margin-top: 0; }
+
+section, aside {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.12);
+}
+
+label { display: block; margin-bottom: 10px; font-size: .9rem; font-weight: 600; }
+input, select, textarea { display: block; width: 100%; padding: 6px; margin-top: 4px; font: inherit; }
+
+button { padding: 6px 12px; cursor: pointer; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+
+.case-item {
+  display: block; width: 100%; text-align: left; margin-bottom: 8px;
+  background: #eef4fa; border: 1px solid #c7d6e5; border-radius: 6px;
+}
+.case-item.active { background: #0b3d66; color: white; }
+
+.error { color: #b00020; background: #fdecee; padding: 8px; border-radius: 6px; margin-top: 8px; }
+.ok { color: #0a6b2c; font-weight: 700; }
+.bad { color: #b00020; font-weight: 700; }
+
+table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+th, td { text-align: left; padding: 6px; border-bottom: 1px solid #dde5ec; }
